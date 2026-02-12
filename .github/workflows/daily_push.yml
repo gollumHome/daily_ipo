@@ -3,7 +3,7 @@ name: IPO Daily Push
 on:
   schedule:
     # 每天北京时间 18:00 运行 (GitHub用的是UTC时间，所以是 10:00)
-    - cron: '0 10 * * *'
+    - cron: '0 10 * * 1-5'
   workflow_dispatch: # 允许手动点击按钮运行测试
 
 jobs:
